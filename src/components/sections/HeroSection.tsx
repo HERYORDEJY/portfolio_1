@@ -10,8 +10,8 @@ export default function HeroSection(): React.JSX.Element {
   const screenSize = useScreenSize()
   
   return (
-    <div
-      className={'w-screen  h-[calc(100vh-82.18px)] flex flex-col items-center justify-center text-primaryColor p-5 gap-y-5'}>
+    <div id={'home'}
+      className={'w-screen  h-[calc(100vh-82.18px)] flex flex-col items-center justify-center text-primaryColor p-5 gap-y-5 scroll-mt-[82.18px]'}>
       <div className={'flex flex-col items-center space-y-2.5 mb-5 md:mb-10 text-primaryColor'}>
         <img src="/images/maliq.png" alt="malik" className={'rounded-full h-40 w-40 md:size-[calc(100vh*0.15)] '}/>
         <h1 className={'maliqName relative lg:text-[40px] italic '}>I'm <span

@@ -8,7 +8,7 @@ export default function ExperienceSection(): React.JSX.Element {
   const sectionHeadrGradientClass = useGradientTextClass({bgGradientStart: 'from-blueGradientStart', bgGradientStop: 'to-blueGradientStop', bgGradientTo: 'bg-gradient-to-b'})
   
   return (
-    <div className="flex item-center justify-center py-20 lg:pt-0 lg:pb-25">
+    <div className="flex item-center justify-center py-20 lg:pt-0 lg:pb-25 scroll-mt-[20.18px] lg:scroll-mt-[82.18px]" id={'experience'}>
     
     <div className="flex flex-col w-screen lg:w-[50%]    p-5  justify-center gap-5 lg:gap-[57px]">
       {/*  header */}

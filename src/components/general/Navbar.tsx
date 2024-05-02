@@ -22,15 +22,15 @@ export default function Navbar(): React.JSX.Element {
                  className={'logo-img  relative h-10 w-10 bg-blend-multiply bg-transparent fill-white'}/>
           </div>
         </a>
-         
+        
         {/* nav links */}
         
         <div className={'hidden md:block'}>
           <ul className={'inline-flex space-x-10'}>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Home</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Projects</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Experience</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Contact</a></li>
+            <li><a href="#home" className={'text-primaryColor font-semibold text-[15px]'}>Home</a></li>
+            <li><a href="#projects" className={'text-primaryColor font-semibold text-[15px]'}>Projects</a></li>
+            <li><a href="#experience" className={'text-primaryColor font-semibold text-[15px]'}>Experience</a></li>
+            <li><a href="#contact" className={'text-primaryColor font-semibold text-[15px]'}>Contact</a></li>
           </ul>
         </div>
         
@@ -61,10 +61,10 @@ export default function Navbar(): React.JSX.Element {
         })}>
           
           <ul className={'flex flex-col space-y-10 p-5'}>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Home</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Projects</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Experience</a></li>
-            <li><a href="" className={'text-primaryColor font-semibold text-[15px]'}>Contact</a></li>
+            <li><a href="#home" className={'text-primaryColor font-semibold text-[15px]'} onClick={toggleShowMobileMenu}>Home</a></li>
+            <li><a href="#projects" className={'text-primaryColor font-semibold text-[15px]'} onClick={toggleShowMobileMenu}>Projects</a></li>
+            <li><a href="#experience" className={'text-primaryColor font-semibold text-[15px]'} onClick={toggleShowMobileMenu}>Experience</a></li>
+            <li><a href="#contact" className={'text-primaryColor font-semibold text-[15px]'} onClick={toggleShowMobileMenu}>Contact</a></li>
           </ul>
         </div>
     

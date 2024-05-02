@@ -4,7 +4,7 @@ import {FaEnvelope, FaGithub, FaLinkedinIn} from "react-icons/fa";
 
 export default function ContactSection(): React.JSX.Element {
   return (
-    <div className={'bg-[#191919] flex flex-col items-center'}>
+    <div className={'bg-[#191919] flex flex-col items-center'} id={'contact'}>
       <div className="flex flex-col py-20 px-5 w-screen lg:w-[50%]">
         <h1 className="text-primaryColor">
           Contact

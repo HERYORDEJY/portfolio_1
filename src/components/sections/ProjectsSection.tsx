@@ -22,7 +22,37 @@ export default function ProjectsSection(): React.JSX.Element {
   
   
   return (
-    <div className="flex flex-col w-screen h-[calc(100vh-82.18px)]  p-5 overflow-y-hidden justify-center gap-5">
+    <div id={'projects'} className={' lg:mb-20 scroll-mt-[20.18px] lg:scroll-mt-[82.18px]'}>
+ 
+    <div className="flex flex-col  w-screen   p-5 overflow-y-hidden justify-center gap-5 lg:hidden">
+      {/*  header */}
+      <div className="w-full flex justify-center item-center">
+        
+        <h1 className={`${sectionHeadrGradientClass} font-extrabold text-[35px] text-center`}>PROJECTS</h1>
+      </div>
+      
+      
+
+      {/*<div className="flex px-20 lg:w-2/3  items-center justify-center">*/}
+      
+      {/*<div className="flex flex-col overflow-x-scroll projectsScrollbar gap-y-10">*/}
+      <div className="w-screen overflow-x-scroll">
+        
+        <div className="flex  flex-row mb-4 gap-10 ">
+        {/*<ProjectItem {...projects[0]} />*/}
+          {renderItems(firstHalfItems)}
+        </div>
+        <div className="flex flex-row gap-10">
+        {/*<ProjectItem {...projects[0]} />*/}
+          {renderItems(secondHalfItems, midPoint)}
+        {/*</div>*/}
+      {/*</div>*/}
+      </div>
+      </div>
+    
+    </div>
+    
+    <div className="hidden lg:flex flex-col w-screen   p-5 overflow-y-hidden justify-center gap-5">
       {/*  header */}
       <div className="w-full flex justify-center item-center">
         
@@ -42,6 +72,8 @@ export default function ProjectsSection(): React.JSX.Element {
         </div>
       </div>
       </div>
+    
+    </div>
     
     </div>
   )
