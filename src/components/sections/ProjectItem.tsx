@@ -11,6 +11,7 @@ interface Props{
 
 function ProjectItem(props: Props) {
   return (
+    
     <div tabIndex={props.tabIndex} className={' flex-none h-[100%] w-full  flex-col rounded-[18px] bg-cardColor md:w-[390px] md:h-[301px] overflow-hidden '} role="listitem"
          aria-label={`${props.title} project`}>
       <div className="flex relative  h-[75%] w-full ">

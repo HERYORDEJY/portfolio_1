@@ -10,19 +10,20 @@ function App() {
     <>
      <Navbar />
       <main className={'pt-[82.18px]'}>
+        
+        
         {/*   Hero */}
         <HeroSection/>
-        
         
         
         {/*  Projects */}
         <ProjectsSection/>
         
-      {/*  Experience*/}
-        <ExperienceSection />
+        {/*  Experience*/}
+        <ExperienceSection/>
         
-      {/*  Contact */}
-        <ContactSection />
+        {/*  Contact */}
+        <ContactSection/>
       
       </main>
     

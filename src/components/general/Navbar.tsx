@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import GridElementsIcon from "~/components/svgs/GridElementsIcon.tsx";
 import {cn} from "~/utils/cn.ts";
+import logo from '~/assets/images/logo-img.png'
 
 
 export default function Navbar(): React.JSX.Element {
@@ -18,7 +19,7 @@ export default function Navbar(): React.JSX.Element {
         {/* logo */}
         <a href="https://vitejs.dev" target="_blank">
           <div>
-            <img src="/images/logo-img.png" alt="logo"
+            <img src={logo} alt="logo"
                  className={'logo-img  relative h-10 w-10 bg-blend-multiply bg-transparent fill-white'}/>
           </div>
         </a>

@@ -4,6 +4,7 @@ import {IoLogoJavascript} from "react-icons/io5";
 import {SiNextdotjs} from "react-icons/si";
 import {RiGatsbyFill} from "react-icons/ri";
 import {useScreenSize} from "~/hooks/useScreenSize.ts";
+import maliq_img from "../../assets/images/maliq.png"
 
 
 export default function HeroSection(): React.JSX.Element {
@@ -13,7 +14,7 @@ export default function HeroSection(): React.JSX.Element {
     <div id={'home'}
       className={'w-screen  h-[calc(100vh-82.18px)] flex flex-col items-center justify-center text-primaryColor p-5 gap-y-5 scroll-mt-[82.18px]'}>
       <div className={'flex flex-col items-center space-y-2.5 mb-5 md:mb-10 text-primaryColor'}>
-        <img src="/images/maliq.png" alt="malik" className={'rounded-full h-40 w-40 md:size-[calc(100vh*0.15)] '}/>
+        <img src={maliq_img} alt="malik" className={'rounded-full h-40 w-40 md:size-[calc(100vh*0.15)] '}/>
         <h1 className={'maliqName relative lg:text-[40px] italic '}>I'm <span
           className={'font-semibold text-backgroundColor dark:text-backgroundColor'}>Oyeleke AbdulMaliq</span></h1>
       </div>
